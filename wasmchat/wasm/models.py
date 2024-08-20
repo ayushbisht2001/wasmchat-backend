@@ -1,5 +1,7 @@
 from django.db import models
-from db_connection import db
 # Create your models here.
+# from mongoengine import Document, StringField, IntField
 
-person_collection = db['person']
+# class YourModel(Document):
+#     name = StringField(max_length=200, required=True)
+#     age = IntField(min_value=0, required=True)

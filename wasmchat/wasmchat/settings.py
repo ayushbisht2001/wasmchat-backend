@@ -80,9 +80,12 @@ WSGI_APPLICATION = 'wasmchat.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+from mongoengine import connect
 
-
-
+connect(
+    db="test_mongo",
+    host="mongodb://localhost:27017/test_mongo"
+)
 
 
 # Password validation
